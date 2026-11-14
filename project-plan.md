@@ -1,35 +1,70 @@
-# Project Plan – Personal Portfolio
+# Project Plan – Alauddin Khan Portfolio
 
 ## Idea
-A one-page portfolio for Alauddin Khan, a computer science student at COMSATS University Islamabad, showing skills (C++, databases, networks, AI) and projects.
+A one-page personal portfolio that introduces me, my skills and my projects. It is meant to be my first professional web presence as a Computer Science student at COMSATS University Islamabad.
+
+## Problem
+My CV is a static document. Recruiters and internship hosts cannot see my work or how I think from it. A portfolio site lets them see my projects, reach me in one click, and see that I can build and ship something.
 
 ## Audience
-Internship hosts, recruiters, and teachers who need a quick, clear picture of what I can do.
+- Internship hosts and recruiters looking at student candidates
+- Teachers and classmates who want to see my projects
+- Small clients who need a simple website
 
 ## Goals
-- Visitors understand who I am within five seconds.
-- Visitors can view projects and contact me in one click.
-- Site works well on a small phone.
+1. A visitor understands who I am and what I study within five seconds.
+2. A visitor can open my projects, GitHub and LinkedIn, or email me, in one click.
+3. The site works well on a small phone and on a desktop.
+4. The site shows my interest in AI and web development through its design, not only its text.
 
 ## Sections
-Hero, About, Skills, Projects, Contact, Footer.
+1. **Hero** (intro tile, photo, status, clock, theme switch)
+2. **About**
+3. **Skills and Interests** (plus a "Tools I use" tile)
+4. **Projects** (Connect 4 / Board Game Hub, Portfolio Generator, Car Rental Management System, Atlas Astrology)
+5. **Contact** (email, GitHub, LinkedIn)
+6. **Footer**
 
 ## Features
-Working nav links, smooth scrolling, mobile menu, dark/light mode, mailto contact button.
+- Navigation bar and tiles linking to each section, with smooth scrolling
+- Responsive bento-grid layout
+- Dark and light mode, saved in the browser
+- Live clock (Pakistan time)
+- Playable Connect 4 board in the hero
+- Email, GitHub, LinkedIn and live project links
 
-## Not now
-Accounts, blog, contact form with a backend.
+**Not included on purpose:** a login, a blog, or a contact form with a backend. A mailto link keeps the site simple and avoids storing anyone's data.
 
 ## Design
-- Colors: #f7f6f2 (background), #17181c (text), #2a47e8 (accent); dark mode uses #101116 and #8fa2ff.
-- Typography: Bricolage Grotesque (headings), DM Sans (body).
-- Style: clean, calm, mobile-first.
+- **Style:** dark, glass-style tiles in a bento grid, monospace type, one purple accent color.
+- **Colors (dark):** background #0a0a0d, text #f3f3f6, accent #8b84ff.
+- **Colors (light):** background #e8e8ed, text #111116, accent #4a41e0.
+- **Typography:** JetBrains Mono, with system monospace as a fallback.
+- **Accessibility:** visible keyboard focus, alt text on the photo, labeled buttons, reduced-motion support.
+
+## Design inspiration
+1. Porteix, a Framer portfolio template with a bento layout: https://porteix.framer.website/ . I studied its structure (a grid of rounded tiles with a photo, status, theme switch, and links to sections). I did not copy its design, logo or images.
+2. The Looponics workshop slides (slide 8) on design inspiration and contrast. They reminded me to check text contrast for the accent color.
+
+## Wireframe
+Wireframe screenshot: `screenshots/wireframe.png` (made in Google Stitch; add after creating it).
 
 ## Tools
-ChatGPT/Claude (planning and code), Google Stitch (wireframe), VS Code, GitHub, GitHub Pages or Netlify.
+- Claude (AI assistant) for planning, code and review
+- Google Stitch for the wireframe
+- VS Code, Git and GitHub
+- Vercel for hosting
 
-## Done when
-- Every nav and CTA link works.
-- No horizontal scroll on mobile.
-- No console errors.
-- Email link opens my mail app.
+## Timeline
+1. Plan and gather content (CV, photo, links)
+2. Generate and review the first version with AI
+3. Redesign to the bento layout
+4. Test on desktop and mobile
+5. Deploy to Vercel and write documentation
+
+## Definition of done
+- Every nav link and tile link works.
+- No horizontal scrolling on mobile.
+- No unresolved console errors.
+- Email, GitHub and LinkedIn links open the right places.
+- The live URL is public: https://my-ai-portfolio-two.vercel.app/

@@ -1,16 +1,44 @@
 # Testing Report
 
-Automated checks run on 14 Nov 2026 with headless Chromium (Playwright) at 1366px and 375px widths, on the bento-grid version. Still to do by me: test on a real phone and in a second browser.
+**Site:** https://my-ai-portfolio-two.vercel.app/
+**Tested:** 14 Nov 2026. Automated checks used headless Chromium (Playwright) on the local files at 1366px (desktop) and 375px (mobile). Manual checks are listed separately below.
 
-| Check | How tested | Result | Fix |
-|---|---|---|---|
-| Page loads | Opened index.html at desktop and mobile size | Pass | None |
-| Console errors | Listened for console and page errors | Only a Google Fonts request failed, because the test machine had no internet. Fonts fall back to system fonts | Fallback fonts are set in the CSS |
-| No horizontal scroll | Compared scrollWidth to viewport at 1366px and 375px | Pass (1366/1366, 375/375) | None |
-| Mobile menu | Clicked Menu, then a nav link at 375px | Pass: menu opens, then closes after a link is clicked | None |
-| Nav links scroll to sections | Clicked Projects link on mobile | Pass | None |
-| Contrast of contact buttons | Viewed screenshot | Buttons looked dim | Removed the opacity applied to the buttons |
-| Dark/light toggle | Not yet tested by hand | TODO | |
-| Email and GitHub links | Not yet clicked | TODO | |
-| Connect 4 live link | Not yet clicked | TODO | |
-| Keyboard (Tab) navigation | Not yet tested | TODO | |
+## Automated checks
+
+| Check | How tested | Result |
+|---|---|---|
+| Page loads | Opened `index.html` at desktop and mobile sizes | Pass |
+| Console errors | Listened for console and page errors | Only a Google Fonts request failed, because the test machine had no internet. The CSS has monospace fallback fonts. No script errors |
+| No horizontal scrolling | Compared page scroll width with viewport width | Pass: 1366/1366 and 375/375 |
+| Nav links scroll to sections | Clicked the Projects link | Pass: page scrolled to the Projects section |
+| Dark/light switch | Clicked the switch and read the theme value | Pass: theme changed to light |
+| Connect 4 board accepts input | Clicked a column | Pass: no errors |
+| Photo loads | Checked the image's natural width | Pass: 900px wide |
+| Layout on mobile | Reviewed a 375px screenshot | Tiles stack in one column; text readable |
+
+## Manual checks (to confirm on the live site)
+
+| Check | Status |
+|---|---|
+| Open the live URL on a real phone | Not yet recorded |
+| Email button opens the mail app | Not yet recorded |
+| GitHub, LinkedIn and "Play it live" links open the right pages | Not yet recorded |
+| Play a full Connect 4 game to a win | Not yet recorded |
+| Keyboard navigation (Tab through the page) | Not yet recorded |
+| Test in a second browser | Not yet recorded |
+
+## Issues found and fixed
+
+| # | Issue | Fix |
+|---|---|---|
+| 1 | The Email and GitHub buttons in the Contact section looked dim | Removed the transparency that was applied to the buttons |
+| 2 | White Connect 4 discs were hard to tell from empty cells | Changed the empty cells to a darker shade so discs stand out |
+| 3 | The main headline wrapped onto too many lines beside the board | Reduced the headline size and rebalanced the layout |
+| 4 | The first redesign left an empty gap in the intro tile | Moved the Connect 4 board into the gap |
+| 5 | `git push` was rejected because the GitHub repo already had a commit | Ran `git pull origin main --allow-unrelated-histories`, then pushed |
+| 6 | Typing `it push` instead of `git push` ran a PowerShell testing command | Re-ran the command as `git push` |
+| 7 | Photo changed format when the transparent version was added | Replaced `photo.jpg` with `photo.webp` and updated the README |
+
+## Notes
+- The site uses no API keys, passwords or tokens.
+- All images are my own or created for this project, and the layout was inspired by, not copied from, a public template.
