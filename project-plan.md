@@ -47,7 +47,11 @@ My CV is a static document. Recruiters and internship hosts cannot see my work o
 2. The Looponics workshop slides (slide 8) on design inspiration and contrast. They reminded me to check text contrast for the accent color.
 
 ## Wireframe
-Wireframe screenshot: `screenshots/wireframe.png` (made in Google Stitch; add after creating it).
+Concept designs made in Google Stitch (project: "Alauddin Khan Developer Portfolio"):
+- `screenshots/wireframe-desktop.png`: desktop project detail screen for Connect 4
+- `screenshots/wireframe-mobile.png`: mobile version of the same screen
+
+These are design concepts used for ideas. Stitch generated example numbers and technical details for the project screen, so the live site only shows facts I have confirmed myself.
 
 ## Tools
 - Claude (AI assistant) for planning, code and review

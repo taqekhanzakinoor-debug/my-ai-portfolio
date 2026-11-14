@@ -37,6 +37,13 @@ These are the prompts I used with Claude while building this portfolio, what eac
 
 **What I learned:** Image size and format affect speed, and a transparent PNG needs a backdrop to look good. When I said both "Software Engineering" and "Computer Science", the AI used one and told me about the conflict, so I should be consistent in my instructions.
 
+## Prompt 6: Design concepts in Google Stitch
+**Prompt:** In Stitch I asked for a desktop version of my developer portfolio, then asked it to "generate the project detail modal or screen for Connect 4", and later for a mobile version. (Add your first Stitch prompt here if it was different.)
+
+**Result:** Stitch produced a dark, developer-style project detail screen for Connect 4, with a project header, stat cards, a game board, a code panel and an architecture section. It also suggested next screens for my other projects.
+
+**What I learned:** Stitch is quick for exploring layouts. However, it invented technical details and numbers about my project, such as performance figures, that I never gave it. I used the designs for visual ideas only, and I will not publish any claim I cannot back up.
+
 ## A stronger version of my prompts
 Using the workshop's prompt formula, a better first prompt would have been:
 
