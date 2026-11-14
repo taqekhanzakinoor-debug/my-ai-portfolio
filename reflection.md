@@ -1,0 +1,3 @@
+# Reflection
+
+Building this portfolio taught me that good results come from planning first and iterating in small steps. I learned to give AI clear context, such as my CV, a design reference and the challenge brief, and to review everything it produced. Claude helped me generate the layout, the Connect 4 feature and my documentation, but it also made mistakes I had to catch, like mixing up my university details. My biggest challenge was Git: a rejected push and a mistyped command showed me how deployment really works. Testing on mobile and desktop also taught me to check my work instead of trusting it. Next, I will add real links and descriptions for my other projects and keep learning machine learning and AI engineering.
