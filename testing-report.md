@@ -1,6 +1,6 @@
 # Testing Report
 
-Automated checks run on 14 Nov 2026 with headless Chromium (Playwright) at 1366px and 375px widths. Still to do by me: test on a real phone and in a second browser, then add the notes here.
+Automated checks run on 14 Nov 2026 with headless Chromium (Playwright) at 1366px and 375px widths, on the bento-grid version. Still to do by me: test on a real phone and in a second browser.
 
 | Check | How tested | Result | Fix |
 |---|---|---|---|
