@@ -37,8 +37,8 @@ a.tile:hover{transform:translateY(-3px);border-color:var(--accent)}
 .intro h1{font-size:clamp(1.4rem,3vw,2.1rem);text-transform:uppercase;max-width:20ch}
 .links{display:flex;flex-wrap:wrap;gap:.4rem 1.4rem;margin-top:1rem;color:var(--muted);text-transform:uppercase;font-size:.85rem}
 .links a:hover{color:var(--ink)}
-.photo{grid-column:7/10;grid-row:1/4;padding:0;overflow:hidden}
-.photo img{width:100%;height:100%;object-fit:cover;object-position:50% 20%;display:block}
+.photo{grid-column:7/10;grid-row:1/4;padding:0;overflow:hidden;background:radial-gradient(85% 65% at 50% 42%,color-mix(in srgb,var(--accent) 60%,transparent),transparent 74%),var(--card)}
+.photo img{width:100%;height:100%;object-fit:cover;object-position:50% 100%;display:block}
 .playbox{display:flex;flex-direction:column;gap:.5rem;align-items:flex-start;margin:1rem 0}
 .playbox .board,.playbox .msg{max-width:230px}
 .hello{grid-column:7/10;grid-row:4/5}
@@ -118,7 +118,7 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:1rem}
    </div>
   </div>
 
-  <div class="tile photo"><img src="assets/photo.jpg" width="800" height="1000" alt="Portrait of Alauddin Khan"></div>
+  <div class="tile photo"><img src="assets/photo.webp" width="900" height="888" alt="Portrait of Alauddin Khan"></div>
 
   <a class="tile hello" href="#contact"><span class="label">Say hello 👋</span><span class="big">Let’s work together</span><span class="arrow" aria-hidden="true">↗</span></a>
 

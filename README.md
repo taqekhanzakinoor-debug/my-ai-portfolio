@@ -42,7 +42,7 @@ Then visit http://localhost:8000.
 ```
 my-ai-portfolio/
 ├── index.html          # the whole website (HTML, CSS, JS)
-├── assets/photo.jpg    # portrait used in the hero
+├── assets/photo.webp    # portrait used in the hero
 ├── screenshots/        # desktop and mobile screenshots
 ├── project-plan.md     # idea, audience, goals, design plan
 ├── prompts.md          # prompts used and their results
