@@ -12,7 +12,7 @@ No install needed. Open `index.html` in your browser, or run `python3 -m http.se
 Push to GitHub, then Settings > Pages > deploy from the `main` branch (or drag the folder to Netlify).
 
 ## Files
-`index.html` (site), `project-plan.md`, `prompts.md`, `testing-report.md`, `screenshots/`.
+`index.html` (site), `assets/photo.jpg`, `project-plan.md`, `prompts.md`, `testing-report.md`, `screenshots/`.
 
 ## Live site / repo
 - Live: (add URL)

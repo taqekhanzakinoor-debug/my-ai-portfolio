@@ -37,7 +37,10 @@ a.tile:hover{transform:translateY(-3px);border-color:var(--accent)}
 .intro h1{font-size:clamp(1.4rem,3vw,2.1rem);text-transform:uppercase;max-width:20ch}
 .links{display:flex;flex-wrap:wrap;gap:.4rem 1.4rem;margin-top:1rem;color:var(--muted);text-transform:uppercase;font-size:.85rem}
 .links a:hover{color:var(--ink)}
-.play{grid-column:7/10;grid-row:1/4;align-items:center;justify-content:center}
+.photo{grid-column:7/10;grid-row:1/4;padding:0;overflow:hidden}
+.photo img{width:100%;height:100%;object-fit:cover;object-position:50% 20%;display:block}
+.playbox{display:flex;flex-direction:column;gap:.5rem;align-items:flex-start;margin:1rem 0}
+.playbox .board,.playbox .msg{max-width:230px}
 .hello{grid-column:7/10;grid-row:4/5}
 .status{grid-column:10/13}.theme{grid-column:10/13}.work{grid-column:10/13}.about{grid-column:10/13}
 .dot{display:inline-block;width:10px;height:10px;border-radius:50%;background:#5be37d;margin-right:.5rem}
@@ -73,10 +76,11 @@ footer{padding:3rem 0 2rem;color:var(--muted);font-size:.85rem}
 footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:1rem}
 @media(max-width:900px){
  .bento{grid-template-columns:1fr 1fr;grid-auto-rows:auto}
- .intro,.play,.hello,.w4{grid-column:1/-1;grid-row:auto}
+ .intro,.photo,.hello,.w4{grid-column:1/-1;grid-row:auto}
+ .photo{height:380px}
  .status,.theme,.work,.about{grid-column:span 1;grid-row:auto;min-height:150px}
  .sec{grid-template-columns:1fr}
- .intro{min-height:340px;gap:2rem}
+ .intro{gap:1rem}
  .logo .full{display:none}
 }
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.cell.drop{animation:none}a.tile,a.tile:hover{transition:none;transform:none}}
@@ -99,6 +103,10 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:1rem}
     <div class="mono-logo" aria-hidden="true">AK</div>
     <div class="clock"><span id="day">Saturday</span><b id="time">--:--</b></div>
    </div>
+   <div class="playbox">
+    <div class="board" id="board" role="group" aria-label="Connect 4 board. Choose a column to drop a disc."></div>
+    <div class="msg"><span id="msg" aria-live="polite">Tap a column to play.</span><button id="reset">Reset</button></div>
+   </div>
    <div>
     <h1>Hello: I’m Alauddin 👋 Computer science student &amp; AI learner from Quetta.</h1>
     <div class="links">
@@ -109,11 +117,7 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:1rem}
    </div>
   </div>
 
-  <div class="tile play">
-   <div class="label" style="align-self:flex-start">Play</div>
-   <div class="board" id="board" role="group" aria-label="Connect 4 board. Choose a column to drop a disc."></div>
-   <div class="msg"><span id="msg" aria-live="polite">Tap a column to play.</span><button id="reset">Reset</button></div>
-  </div>
+  <div class="tile photo"><img src="assets/photo.jpg" width="800" height="1000" alt="Portrait of Alauddin Khan"></div>
 
   <a class="tile hello" href="#contact"><span class="label">Say hello 👋</span><span class="big">Let’s work together</span><span class="arrow" aria-hidden="true">↗</span></a>
 
