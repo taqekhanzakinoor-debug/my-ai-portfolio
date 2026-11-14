@@ -1,7 +1,7 @@
 # Project Plan – Personal Portfolio
 
 ## Idea
-A one-page portfolio for Alauddin Khan, a computer science student in Quetta, showing skills (C++, databases, networks, AI) and projects.
+A one-page portfolio for Alauddin Khan, a computer science student at COMSATS University Islamabad, showing skills (C++, databases, networks, AI) and projects.
 
 ## Audience
 Internship hosts, recruiters, and teachers who need a quick, clear picture of what I can do.
